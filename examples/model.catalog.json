@@ -1,0 +1,27 @@
+{
+  "models": [
+    {
+      "slug": "replace-with-your-gateway-model-id",
+      "display_name": "Example model - replace before use",
+      "description": "Template only. Set capabilities and limits for your gateway model.",
+      "supported_reasoning_levels": [],
+      "shell_type": "unified_exec",
+      "visibility": "list",
+      "supported_in_api": true,
+      "priority": 100,
+      "support_verbosity": false,
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 10000
+      },
+      "experimental_supported_tools": [],
+      "context_window": 128000,
+      "max_context_window": 128000,
+      "input_modalities": ["text"],
+      "use_responses_lite": false,
+      "model_messages": {
+        "instructions_template": "You are a helpful coding assistant."
+      }
+    }
+  ]
+}

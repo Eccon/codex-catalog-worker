@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "codex-catalog",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-14",
+  "workers_dev": false,
+  "preview_urls": false,
+  "vars": {
+    "CATALOG_PATH": "/backend-api/codex/models",
+    "FALLBACK_REF": "main",
+    "TAG_CACHE_TTL": "86400",
+    "MAIN_CACHE_TTL": "300",
+    "EXTRA_CATALOG_REPOSITORY": "Eccon/codex-catalog-worker",
+    "EXTRA_CATALOG_DIRECTORY": "catalogs",
+    "EXTRA_CATALOG_REF": "main",
+    "EXTRA_CATALOG_CACHE_TTL": "300",
+    "EXTRA_CATALOG_FAILURE_MODE": "skip",
+    "PASSTHROUGH_OTHER_PATHS": "false"
+  },
+  // To intercept a path on an existing proxied domain, enable this route.
+  // The final * also matches the client_version query string.
+  // "routes": [
+  //   {
+  //     "pattern": "https://YOUR_DOMAIN/backend-api/codex/models*",
+  //     "zone_name": "YOUR_ZONE"
+  //   }
+  // ],
+  "observability": {
+    "enabled": true
+  }
+}
