@@ -95,7 +95,8 @@ Worker 按这些 SHA 读取文件内容。
 
 无需更新文件列表。
 无需重新部署 Worker。
-当前 `deepseek.json` 和 `glm.json` 使用 `{"models":[]}` 空模板。
+当前 `deepseek.json` 和 `glm.json` 各包含两个实际模型。
+模型为 `deepseek-flash`、`deepseek-v4-pro`、`glm-5.3` 和 `glm-5.3-flash`。
 完整模型对象模板位于 `../examples/model.catalog.json`。
 模板中的容量和能力是示例值，必须按实际网关配置替换。
 

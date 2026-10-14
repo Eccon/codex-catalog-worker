@@ -12,8 +12,10 @@ Worker 忽略 Markdown 文件。
 }
 ```
 
-`deepseek.json` 和 `glm.json` 当前为空。
-把实际模型对象放入 `models` 数组。
+`deepseek.json` 包含 `deepseek-flash` 和 `deepseek-v4-pro`。
+`glm.json` 包含 `glm-5.3` 和 `glm-5.3-flash`。
+这两个文件来自用户提供的实际 catalog。
+新增模型时，把模型对象放入 `models` 数组。
 模板在 `../examples/model.catalog.json`。
 模板中的模型名、能力和容量必须替换为真实配置。
 

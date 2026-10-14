@@ -21,6 +21,6 @@ Worker 把模型追加到官方目录后返回完整 catalog。
 字段模板见 [examples/model.catalog.json](examples/model.catalog.json)。
 Worker 部署说明见 [codex-catalog-worker/README.md](codex-catalog-worker/README.md)。
 
-当前第三方模型目录为空。
+当前第三方目录包含 `glm-5.3`、`glm-5.3-flash`、`deepseek-flash` 和 `deepseek-v4-pro`。
 模型 metadata 必须描述网关实际支持的模型。
 把模型添加到 catalog 不会为网关增加推理能力。
